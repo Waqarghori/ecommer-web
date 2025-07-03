@@ -1,4 +1,4 @@
-body {
+/* body {
     background-color: #f8f9fa;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
@@ -47,7 +47,7 @@ a {
 .card-img-top {
     height: 240px;
     object-fit: cover;
-}
+} */
 
 /* .card-title {
   font-size: 1.25rem;
@@ -58,28 +58,141 @@ a {
   font-size: 1rem;
   color: #6c757d;
 } */
- /* Default size for desktop */
+ 
+
+/* ===== Base Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== Body Styling ===== */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f3f4f6;
+  color: #333;
+  padding-bottom: 50px;
+}
+
+/* ===== Header & Navbar ===== */
+.navbar {
+  background: linear-gradient(to right, #2c3e50, #4ca1af);
+  padding: 10px 20px;
+}
+.navbar-brand {
+  color: white;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+}
+.navbar-brand:hover {
+  color: #ffd700;
+}
+.navbar-nav .nav-link {
+  color: #fff !important;
+  margin-right: 15px;
+  transition: 0.3s;
+}
+.navbar-nav .nav-link:hover {
+  color: #ffd700 !important;
+}
+
+/* ===== Carousel ===== */
 #carouselExampleIndicators {
   max-width: 100%;
   height: 500px;
   overflow: hidden;
+  margin-top: 20px;
 }
-
 .carousel-item img {
-  object-fit: cover;
   height: 100%;
+  object-fit: cover;
 }
 
-/* Tablet size */
+/* ===== Section Title ===== */
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 30px 0;
+  color: #2c3e50;
+}
+
+/* ===== Cards Container ===== */
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  padding: 30px;
+  justify-items: center; /* ✅ Center items horizontally in grid */
+}
+
+
+/* ===== Card Styling ===== */
+.card {
+  /* border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  transition: transform 0.3s ease;
+    text-align: center; */
+      width: 100%;              /* Full width within grid */
+  max-width: 500px;         /* 👈 Increase size from 250/280 to 350 */
+  min-height: 450px;        /* 👈 Optional: to make card taller */
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+  transition: 0.3s ease;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.card img {
+  margin: 0 auto;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.card a.btn {
+  background-color: #4ca1af;
+  border: none;
+  color: white;
+  transition: 0.3s;
+}
+.card a.btn:hover {
+  background-color: #357d90;
+}
+
+/* ===== Responsive Carousel Height ===== */
 @media (max-width: 768px) {
   #carouselExampleIndicators {
-    height: 350px;
+    height: 300px;
   }
 }
 
-/* Mobile size */
 @media (max-width: 480px) {
   #carouselExampleIndicators {
-    height: 250px;
+    height: 200px;
   }
 }
