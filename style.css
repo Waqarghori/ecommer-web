@@ -114,7 +114,6 @@ body {
     object-fit: cover;
 }
 
-/* ===== Section Title ===== */
 h1 {
     text-align: center;
     font-size: 2.5rem;
@@ -122,7 +121,6 @@ h1 {
     color: #2c3e50;
 }
 
-/* ===== Cards Container ===== */
 
 .main {
     display: grid;
@@ -130,11 +128,9 @@ h1 {
     gap: 25px;
     padding: 30px;
     justify-items: center;
-    /* ✅ Center items horizontally in grid */
 }
 
 
-/* ===== Card Styling ===== */
 .card {
     width: 100%;
     max-width: 20rem;
@@ -144,9 +140,9 @@ h1 {
     transition: 0.3s ease;
     background-color: #fff;
     overflow: hidden;
-}
+} */
 
-.card img {
+ .card img {
     margin: 0 auto;
 }
 
@@ -184,7 +180,7 @@ h1 {
     background-color: #357d90;
 }
 
-/* ===== Responsive Carousel Height ===== */
+
 @media (max-width: 768px) {
     #carouselExampleIndicators {
         height: 300px;
