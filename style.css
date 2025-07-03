@@ -23,6 +23,7 @@ body {
     color: white;
     font-size: 1.8rem;
     letter-spacing: 1px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 .navbar-brand:hover {
