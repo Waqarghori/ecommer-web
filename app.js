@@ -2,7 +2,6 @@ let getDiv = document.querySelector('.main')
 fetch('https://dummyjson.com/products')
 .then(res => res.json())
 .then((data)=>{
-    console.log(data.products);
     data.products.map((abc)=>{
         getDiv.innerHTML += `<div class="card">
   <img src="${abc.images[0]}" class="card-img-top" alt="...">
